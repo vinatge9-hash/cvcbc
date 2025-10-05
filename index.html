@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Cup & Bean – Coffee Shop</title>
+  <meta name='description' content='Cup & Bean cozy coffee shop offering artisanal coffee, fresh pastries, and a welcoming neighborhood vibe.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='antialiased'>
+  <!-- Header / Navigation -->
+  <header>
+    <nav class='bg-white shadow-md'>
+      <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+        <div class='flex justify-between h-16'>
+          <div class='flex-shrink-0 flex items-center'>
+            <a href='index.html' class='text-2xl font-bold text-gray-800'>Cup & Bean</a>
+          </div>
+          <div class='hidden md:flex items-center space-x-8'>
+            <a href='index.html' class='text-gray-600 hover:text-gray-800'>Home</a>
+            <a href='menu.html' class='text-gray-600 hover:text-gray-800'>Menu</a>
+            <a href='about.html' class='text-gray-600 hover:text-gray-800'>About</a>
+            <a href='contact.html' class='text-gray-600 hover:text-gray-800'>Contact</a>
+          </div>
+          <div class='md:hidden'>
+            <button id='mobile-menu-button' class='text-gray-600' aria-label='Open Menu'>☰</button>
+          </div>
+        </div>
+      </div>
+      <div id='mobile-menu' class='md:hidden hidden bg-white'>
+        <a href='index.html' class='block px-4 py-2 text-sm text-gray-700'>Home</a>
+        <a href='menu.html' class='block px-4 py-2 text-sm text-gray-700'>Menu</a>
+        <a href='about.html' class='block px-4 py-2 text-sm text-gray-700'>About</a>
+        <a href='contact.html' class='block px-4 py-2 text-sm text-gray-700'>Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero with background image -->
+  <section class='relative min-h-screen bg-cover bg-center' style='background-image: url("https://images.pexels.com/photos/3928266/pexels-photo-3928266.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");'>
+    <div class='absolute inset-0 bg-black opacity-60'></div>
+    <div class='relative z-10 flex items-center justify-center h-full'>
+      <div class='text-center text-white px-4'>
+        <h1 class='font-[Montserrat] text-4xl md:text-6xl font-bold mb-4'>Cup & Bean</h1>
+        <p class='font-[Open Sans] text-lg md:text-2xl max-w-2xl mx-auto mb-6'>Artisanal coffee, freshly baked pastries, and a cozy neighborhood vibe.</p>
+        <div class='flex gap-4 justify-center'>
+          <a href='menu.html' class='bg-[#3C2415] text-white px-6 py-3 rounded-full hover:bg-[#4b2a1b] transition-all duration-300'>View Menu</a>
+          <a href='contact.html' class='border-2 border-white text-white px-6 py-3 rounded-full hover:bg-white hover:text-[#3C2415] transition-all duration-300'>Visit Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class='py-16 bg-[#F5DEB3] text-gray-800'>
+    <!-- Quick highlights -->
+    <section class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8' aria-labelledby='highlights'>
+      <h2 id='highlights' class='text-2xl font-semibold mb-6 font-[Montserrat]'>What we serve</h2>
+      <div class='grid grid-cols-1 md:grid-cols-3 gap-6'>
+        <div class='bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-all duration-300 transform hover:scale-105'>
+          <div class='text-3xl mb-3'>☕</div>
+          <h3 class='font-[Montserrat] text-xl font-semibold mb-2'>Artisan Coffee</h3>
+          <p class='text-sm text-gray-600'>Small-batch espresso, single-origin beans, roasted in-house.</p>
+        </div>
+        <div class='bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-all duration-300 transform hover:scale-105'>
+          <div class='text-3xl mb-3'>🥐</div>
+          <h3 class='font-[Montserrat] text-xl font-semibold mb-2'>Fresh Pastries</h3>
+          <p class='text-sm text-gray-600'>Croissants, morning buns, and seasonal pastries baked daily.</p>
+        </div>
+        <div class='bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-all duration-300 transform hover:scale-105'>
+          <div class='text-3xl mb-3'>🌿</div>
+          <h3 class='font-[Montserrat] text-xl font-semibold mb-2'>Relaxed Atmosphere</h3>
+          <p class='text-sm text-gray-600'>Cozy seating, free Wi‑Fi, and a friendly neighborhood vibe.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Story -->
+    <section class='mt-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8' aria-labelledby='story'>
+      <div class='grid md:grid-cols-2 gap-8 items-center'>
+        <div>
+          <img src='https://images.unsplash.com/photo-1685514126652-ec81ac6148f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw2fHxjb3p5JTIwY29ybmVyJTIwd2l0aCUyMGNvZmZlZSUyMGNvdW50ZXIlMjBhbmQlMjBwbGFudHN8ZW58MHwwfHx8MTc1OTY0NjA4Nnww&ixlib=rb-4.1.0&q=80&w=1080' alt='Cozy corner with coffee counter and plants' class='w-full rounded-lg shadow-md' />
+        </div>
+        <div>
+          <h2 id='story' class='text-3xl font-semibold mb-4 font-[Montserrat]'>Our Story</h2>
+          <p class='text-gray-700 mb-4'>Cup & Bean started as a small neighborhood café with a big dream: to bring people together over great coffee and warm, honest pastries. We source ethically grown beans, support local bakers, and cultivate a welcoming space where everyone feels at home.</p>
+          <p class='text-gray-700'>Whether you're meeting a friend, catching up on work, or simply taking a quiet moment for yourself, we’ve crafted a simple, friendly experience with attention to detail and care in every cup.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class='mt-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8' aria-labelledby='testimonials'>
+      <h2 id='testimonials' class='text-2xl font-semibold mb-6 font-[Montserrat]'>What our customers say</h2>
+      <div class='grid grid-cols-1 md:grid-cols-2 gap-6'>
+        <div class='bg-white rounded-lg p-6 shadow-md'>
+          <p class='text-gray-700'>“The latte art is beautiful and the coffee is consistently excellent. This is my go-to spot.”</p>
+          <div class='mt-4 flex items-center'>
+            <img src='https://images.unsplash.com/photo-1675526607070-f5cbd71dde92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw2fHxzbWlsaW5nJTIwY3VzdG9tZXIlMjBwb3J0cmFpdHxlbnwwfDB8fHwxNzU5NjQ2MDg3fDA&ixlib=rb-4.1.0&q=80&w=1080' alt='Smiling customer' class='w-10 h-10 rounded-full object-cover mr-3'>
+            <div class='text-sm text-gray-600'>Alex</div>
+          </div>
+        </div>
+        <div class='bg-white rounded-lg p-6 shadow-md'>
+          <p class='text-gray-700'>“Loved the warm atmosphere and friendly staff. Pastries are out of this world.”</p>
+          <div class='mt-4 flex items-center'>
+            <img src='https://images.unsplash.com/photo-1723248691609-8ffa4b10d0c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwxMHx8c21pbGluZyUyMGJhcmlzdGF8ZW58MHwwfHx8MTc1OTY0NjA4OHww&ixlib=rb-4.1.0&q=80&w=1080' alt='Barista smiling' class='w-10 h-10 rounded-full object-cover mr-3'>
+            <div class='text-sm text-gray-600'>Mia</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class='bg-white border-t'>
+    <div class='max-w-7xl mx-auto px-4 py-6 text-sm text-gray-600'>© 2025 Cup & Bean. All rights reserved.</div>
+  </footer>
+
+  <script>
+    // Simple mobile menu toggle
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    }
+  </script>
+</body>
+</html>
